@@ -6,7 +6,6 @@ A basic example of playing audio through an AC97-compatible audio card:
 var mixer = new AudioMixer();
 var audioStream = MemoryAudioStream.FromWave(sampleAudioBytes);
 var driver = AC97.Initialize(bufferSize: 4096);
-mixer.Streams.Add(audioStream);
 
 var audioManager = new AudioManager()
 {
